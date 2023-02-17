@@ -23,4 +23,3 @@ while 1:
             print(start_sequence, response["choices"][0]["text"].strip())
         except Exception as exc:
             print(exc)
-print('test')
