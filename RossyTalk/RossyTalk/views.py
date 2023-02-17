@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 
 
-def hello(request):
-    return HttpResponse('hello there')
+def rossy(request):
+    context = {}
+    context['hello'] = 'Hello Rossy'
+    return
