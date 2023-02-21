@@ -1,7 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def rossy(request):
-    context = {}
-    context['hello'] = 'Hello Rossy'
-    return
+    context          = {}
+    context['Rossy Title'] = 'Hello Rossy'
+    return render(request, 'rossy.html', context)
