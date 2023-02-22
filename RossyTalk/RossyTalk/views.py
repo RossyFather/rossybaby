@@ -3,6 +3,5 @@ from django.shortcuts import render
 
 
 def rossy(request):
-    context          = {}
-    context['Rossy Title'] = 'Hello Rossy'
-    return render(request, 'rossy.html', context)
+    views_name = 'Rossybaby'
+    return render(request, 'rossy.html', {'name': views_name})
